@@ -159,9 +159,10 @@ public class EmployeeDAO {
 			
 			con = dbConnectt.getConnection();
 			
-			String sql = "SELECT LAST_NAME FROM EMPLOYEES WHERE LAST_NAME LIKE '%"+name+"%'";
+			String sql = "SELECT LAST_NAME FROM EMPLOYEES WHERE LAST_NAME LIKE ?";
 			
 			st = con.prepareStatement(sql);
+			st.setString(1, "%"+name+"%");
 			
 			rs = st.executeQuery();
 			
