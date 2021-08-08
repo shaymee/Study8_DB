@@ -15,7 +15,7 @@ public class DBMain2_Employee {
 		
 //		employeeDAO.getSal(5000, 20000);
 		
-		employeeDAO.search("a");
+		employeeDAO.search("b");
 		
 		
 		System.out.println("== EMPLOYEE MAIN FINISH ==");

@@ -130,7 +130,7 @@ public class EmployeeDAO {
 				
 				System.out.print(rs.getInt(1)+"\t");
 				System.out.println(rs.getInt(2));				
-				System.out.println("-------------------------------------------");
+				System.out.println("--------------------------------------------");
 				
 			}
 			
